@@ -2,5 +2,7 @@
   --bg:#282828;
 }
 body{
+  background: var(--bg);
+  padding: 0;
   margin: 0;
 }
