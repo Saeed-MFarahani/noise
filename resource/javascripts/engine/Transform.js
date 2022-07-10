@@ -6,13 +6,13 @@ export default class Transform {
   position = new Vector3();
   rotation = new Euler3();
 
-  constructor( _Vector3_ , _Euler3_ ){
+  constructor( vector3 , euler3 ){
 
-    if(typeof _Vector3_ !== "undefined")
-      this.position = _Vector3_;
+    if(typeof vector3 !== "undefined")
+      this.position = vector3;
 
-    if(typeof _Euler3_ !== "undefined")
-      this.rotation = _Euler3_;
+    if(typeof euler3 !== "undefined")
+      this.rotation = euler3;
 
   }
 }
