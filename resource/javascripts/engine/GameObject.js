@@ -1,4 +1,4 @@
-import Transform from "./transform/Transform.js";
+import Transform from "./Transform.js";
 
 export default class GameObject{
   name = "";

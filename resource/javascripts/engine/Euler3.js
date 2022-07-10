@@ -4,11 +4,11 @@ export default class Euler3{
   z = 0;
 
   Set( x, y, z ) {
-    if(typeof x !== undefined)
+    if(typeof x !== "undefined")
       this.x = x;
-    if(typeof y !== undefined)
+    if(typeof y !== "undefined")
       this.y = y;
-    if(typeof z !== undefined)
+    if(typeof z !== "undefined")
       this.z = z;
   }
 

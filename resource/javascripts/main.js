@@ -1,4 +1,4 @@
-import GameObject from "./game-engine/GameObject.js";
+import GameObject from "./engine/GameObject.js";
 
 const player = new GameObject();
 
