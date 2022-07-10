@@ -3,9 +3,9 @@ export default class Vector2 {
   y = 0;
 
   Set(x, y) {
-    if(typeof x !== undefined)
+    if(typeof x !== "undefined")
       this.x = x;
-    if(typeof y !== undefined)
+    if(typeof y !== "undefined")
       this.y = y;
   }
   
