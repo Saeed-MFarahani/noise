@@ -1,7 +1,10 @@
 export default class Renderer{
   domElement = document.createElement("canvas");
-  
-  constructor(){
 
+  render(scene) {
+  }
+
+  constructor(){
+    this.graphic = this.domElement.getContext("webgl2");
   }
 }

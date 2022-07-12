@@ -8,10 +8,9 @@ export default class Transform {
 
   constructor( vector3 , euler3 ){
 
-    if(typeof vector3 !== "undefined")
+    if( vector3 instanceof Vector3 )
       this.position = vector3;
-
-    if(typeof euler3 !== "undefined")
+    if( euler3 instanceof Euler3 )
       this.rotation = euler3;
 
   }

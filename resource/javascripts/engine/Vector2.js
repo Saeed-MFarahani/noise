@@ -3,10 +3,14 @@ export default class Vector2 {
   y = 0;
 
   Set(x, y) {
-    if(typeof x !== "undefined")
+    if(typeof x === "number")
       this.x = x;
-    if(typeof y !== "undefined")
+    else throw "The 'X' parameter is invalid. It is not a number!"
+
+    if(typeof y === "number")
       this.y = y;
+    else throw "The 'Y' parameter is invalid. It is not a number!"
+    
   }
   
   constructor( x, y ){

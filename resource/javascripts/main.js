@@ -1,5 +1,5 @@
-import GameObject from "./engine/GameObject.js";
+import Renderer from "./engine/Renderer";
 
-const player = new GameObject();
+ 
 
-console.log(player);
+ const renderer = new Renderer();
