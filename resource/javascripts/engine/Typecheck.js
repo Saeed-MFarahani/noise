@@ -1,29 +1,17 @@
-export default class Typecheck {
-  Number(input, paramName) {
+export default new class Typecheck {
+  number(input) {
     if (typeof input === "number") return true;
-
-    else if (typeof input !== "undefined")
-      throw `The ${paramName} parameter is invalid. It is not a number!`;
-
-    return false;
+    else return false;
   }
 
-  String(input, paramName) {
+  string(input) {
     if (typeof input === "string") return true;
-
-    else if (typeof input !== "undefined")
-      throw `The ${paramName} parameter is invalid. It is not a number!`;
-
-    return false;
+    else return false;
   }
 
-  Boolean(input, paramName) {
+  boolean(input) {
     if (typeof input === "boolean") return true;
-
-    else if (typeof input !== "undefined")
-      throw `The ${paramName} parameter is invalid. It is not a number!`;
-
-    return false;
+    else return false;
   }
-  constructor(){}
-}
+  constructor() {}
+};

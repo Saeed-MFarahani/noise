@@ -4,12 +4,16 @@ export default class Euler3{
   z = 0;
 
   Set( x, y, z ) {
-    if(typeof x !== "undefined")
+
+    if( Typecheck.number( x ) )
       this.x = x;
-    if(typeof y !== "undefined")
+
+    if( Typecheck.number( y ) )
       this.y = y;
-    if(typeof z !== "undefined")
+
+    if( Typecheck.number( z ) )
       this.z = z;
+
   }
 
   constructor( x, y, z ){

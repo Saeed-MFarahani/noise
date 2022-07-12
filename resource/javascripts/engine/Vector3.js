@@ -1,4 +1,4 @@
-import Typecheck from "./Typecheck";
+import Typecheck from "./Typecheck.js";
 
 export default class Vector3 {
   x = 0;
@@ -6,17 +6,15 @@ export default class Vector3 {
   z = 0;
 
   Set(x, y, z) {
-    if(Typecheck)
+
+    if( Typecheck.number( x ) )
       this.x = x;
-    else throw "The X parameter is invalid. It is not a number!"
 
-    if(typeof x === "number")
+    if( Typecheck.number( y ) )
       this.y = y;
-    else throw "The Y parameter is invalid. It is not a number!"
 
-    if(typeof z === "number")
+    if( Typecheck.number( z ) )
       this.z = z;
-    else throw "The Z parameter is invalid. It is not a number!"
   }
 
   constructor( x, y, z ){
