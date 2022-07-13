@@ -1,5 +1,3 @@
-import GameObject from "./engine/GameObject.js";
+import Typecheck from "./engine/Typecheck.js";
 
-const player = new GameObject();
-
-console.log(player);
+console.log(Typecheck.number( 12 ));

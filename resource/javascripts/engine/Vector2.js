@@ -3,13 +3,11 @@ export default class Vector2 {
   y = 0;
 
   Set(x, y) {
-    if(typeof x !== "undefined")
-      this.x = x;
-    if(typeof y !== "undefined")
-      this.y = y;
+    if (Typecheck.number(x)) this.x = x;
+    if (Typecheck.number(y)) this.y = y;
   }
-  
-  constructor( x, y ){
-    this.Set( x, y );
+
+  constructor(x, y) {
+    this.Set(x, y);
   }
 }

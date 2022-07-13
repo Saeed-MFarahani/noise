@@ -2,17 +2,11 @@ import Euler3 from "./Euler3.js";
 import Vector3 from "./Vector3.js";
 
 export default class Transform {
-
   position = new Vector3();
   rotation = new Euler3();
 
-  constructor( _Vector3_ , _Euler3_ ){
-
-    if(typeof _Vector3_ !== "undefined")
-      this.position = _Vector3_;
-
-    if(typeof _Euler3_ !== "undefined")
-      this.rotation = _Euler3_;
-
+  constructor(vector3, euler3) {
+    if (vector3 instanceof Vector3) this.position = vector3;
+    if (euler3 instanceof Euler3) this.rotation = euler3;
   }
 }
